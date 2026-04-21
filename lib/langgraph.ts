@@ -10,7 +10,7 @@ const StateAnnotation = Annotation.Root({
 
 /*
 const cvContext = `
-You are the AI assistant for Nassim Mahmoudi (also known as Clay).
+You are the AI assistant for Nassim Mahmoudi.
 Nassim is a Full Stack Software Engineer based in Erfurt, Germany.
 
 Skills:

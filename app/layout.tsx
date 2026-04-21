@@ -8,11 +8,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clay // Nassim Mahmoudi | Software Engineer",
+  title: "Nassim Mahmoudi | Software Engineer",
   description: "Senior Software Engineer Portfolio & AI Chatbot",
 };
 
 import ChatbotBubble from "@/components/ChatbotBubble";
+
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 export default function RootLayout({
   children,
@@ -22,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistMono.variable} dark antialiased`}>
       <body className="bg-background text-foreground selection:bg-terminal-blue/30 selection:text-terminal-blue">
-        <div className="crt-overlay opacity-20" />
-        <main className="relative min-h-screen flex flex-col items-center">
-          {children}
-          <ChatbotBubble />
-        </main>
+        <LanguageProvider>
+          <div className="crt-overlay opacity-20" />
+          <main className="relative min-h-screen flex flex-col items-center">
+            {children}
+            <ChatbotBubble />
+          </main>
+        </LanguageProvider>
       </body>
     </html>
   );

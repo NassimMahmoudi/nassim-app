@@ -4,15 +4,18 @@ import { motion } from "framer-motion";
 import { Terminal } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { useLanguage } from "@/lib/LanguageContext";
+
 export default function TerminalHero() {
+  const { t } = useLanguage();
   const [text, setText] = useState("");
-  const fullText = "whoami --professional";
+  const fullText = t.hero.whoami;
   const bio = [
-    "> Loading Clay_Persona.sh...",
-    "> [SUCCESS] High-Level Engineer found.",
-    "> Location: Erfurt, Germany",
-    "> Main_Focus: JS, React, Software Architecture.",
-    "> Status: Available for High-Impact Projects.",
+    t.hero.loading,
+    t.hero.success,
+    t.hero.location,
+    t.hero.focus,
+    t.hero.status,
   ];
 
   useEffect(() => {
@@ -40,14 +43,14 @@ export default function TerminalHero() {
             <div className="w-3 h-3 rounded-full bg-green-500/50" />
           </div>
           <div className="flex-1 text-center text-xs text-white/40 font-mono flex items-center justify-center gap-2">
-            <Terminal size={12} /> clay — bash — 80x24
+            <Terminal size={12} /> nassim's bash
           </div>
         </div>
 
         {/* Terminal Body */}
-        <div className="p-6 font-mono text-sm sm:text-base space-y-2">
+        <div className="p-6 font-mono text-sm sm:text-base space-y-2 select-none" dir="ltr">
           <div className="flex gap-2">
-            <span className="text-terminal-green">clay@portfolio</span>
+            <span className="text-terminal-green">nassim@portfolio</span>
             <span className="text-white/40">:</span>
             <span className="text-terminal-blue">~</span>
             <span className="text-white">$</span>
@@ -83,7 +86,7 @@ export default function TerminalHero() {
               Nassim Mahmoudi
             </h1>
             <p className="text-xl sm:text-2xl text-white/80 mt-2">
-              Full Stack Software Engineer
+              {t.hero.title}
             </p>
           </motion.div>
         </div>

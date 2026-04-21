@@ -5,41 +5,59 @@ import {
   Database, 
   Globe, 
   Layout, 
-  Server, 
+  Server,
+  MessageSquare,
+  Cpu,
+  Zap,
+  BookOpen
 } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Frontend Mastery",
+    title: "Communication",
+    icon: <MessageSquare className="text-pink-400" />,
+    skills: ["Team Leadership", "Technical Writing", "Public Speaking", "Agile Collaboration"],
+  },
+  {
+    title: "AI & Modern Backend",
+    icon: <Cpu className="text-terminal-green" />,
+    skills: ["Python", "FastAPI", "Haystack", "MCP", "Spring Boot", "Java"],
+  },
+  {
+    title: "Frontend & Docs",
     icon: <Layout className="text-terminal-blue" />,
-    skills: ["React 19", "Vue.js", "Angular", "TypeScript", "Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "Backend Core",
-    icon: <Server className="text-terminal-green" />,
-    skills: ["Node.js", "Spring Boot", "Express.js", "Java", "PHP", "PostgreSQL"],
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: <Globe className="text-purple-400" />,
-    skills: ["AWS", "Azure", "Docker", "CI/CD", "Jenkins", "Git/GitHub"],
+    skills: ["React 19", "Next.js", "TypeScript", "Tailwind CSS", "Docusaurus", "Vue.js"],
   },
   {
     title: "Data Systems",
     icon: <Database className="text-amber-400" />,
-    skills: ["MySQL", "MongoDB", "Redis", "REST APIs", "GraphQL", "Apache Kafka"],
+    skills: ["PostgreSQL", "Liquibase", "MySQL", "MongoDB", "Redis", "Apache Kafka"],
+  },
+  {
+    title: "DevOps & Cloud",
+    icon: <Globe className="text-purple-400" />,
+    skills: ["AWS", "Azure", "Docker", "CI/CD", "Jenkins", "Git/GitHub"],
+  },
+  {
+    title: "Integrations",
+    icon: <Zap className="text-yellow-400" />,
+    skills: ["Stripe Payment", "REST APIs", "GraphQL", "Node.js", "Express.js"],
   },
 ];
 
+import { useLanguage } from "@/lib/LanguageContext";
+
 export default function SkillsGrid() {
+  const { t } = useLanguage();
+  
   return (
-    <section className="w-full max-w-6xl px-4 py-24">
+    <section className="w-full max-w-4xl px-4 py-24">
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-3xl font-bold glow-text mb-4">Technical Stack</h2>
-        <div className="h-1 w-20 bg-terminal-blue rounded-full glow-border" />
+        <h2 className="text-3xl font-bold glow-text mb-4">{t.sections.skills}</h2>
+        <div className="h-1 w-20 bg-terminal-blue rounded-full glow-border mx-auto" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {skillCategories.map((category, idx) => (
           <motion.div
             key={idx}
