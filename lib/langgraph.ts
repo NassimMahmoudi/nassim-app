@@ -43,16 +43,20 @@ const callModel = async (state: typeof StateAnnotation.State) => {
   // For now, if no API key is found, we'll provide a high-quality simulated response.
   if (!process.env.OPENAI_API_KEY) {
     const input = lastMessage.content.toString().toLowerCase();
-    let response = "I'm sorry, I couldn't process that. Try asking about my skills or contact info!";
+    let response = "I'm sorry, I'm still learning about that part of Nassim's life. Try asking about 'skills', 'experience', 'projects', or 'contact'!";
     
     if (input.includes("skill") || input.includes("tech")) {
-      response = "I specialize in modern web technologies, specifically React 19, Next.js, and TypeScript. I also have deep experience with backend systems like Spring Boot and Node.js.";
-    } else if (input.includes("contact") || input.includes("reach") || input.includes("email")) {
-      response = "You can reach me at nassimmahmoudi38@gmail.com or via phone at +49 179 2241555.";
-    } else if (input.includes("project") || input.includes("work")) {
-      response = "I've worked on some exciting projects, including high-performance search cloud solutions at Quasiris and enterprise apps at TELEMATIK. Check out the timeline on the page for more details!";
-    } else if (input.includes("hello") || input.includes("hi")) {
-      response = "Hi there! I'm Nassim's AI assistant. How can I help you learn more about my work today?";
+      response = "Nassim is highly proficient in modern web development. His core stack includes React 19, Next.js, and TypeScript. He's also skilled in backend technologies like Node.js, Spring Boot, and Java, with expertise in both SQL (PostgreSQL) and NoSQL (MongoDB) databases.";
+    } else if (input.includes("contact") || input.includes("reach") || input.includes("email") || input.includes("phone")) {
+      response = "You can reach Nassim at nassimmahmoudi38@gmail.com. He's also available on LinkedIn for professional networking, or you can check his phone: +49 179 2241555.";
+    } else if (input.includes("experience") || input.includes("work") || input.includes("job")) {
+      response = "Currently, Nassim is a seniority-level Full Stack Developer at Quasiris Search Cloud in Erfurt, leading frontend efforts. Previously, he spent 2 years at TELEMATIK building enterprise-grade Angular and Spring Boot applications.";
+    } else if (input.includes("project")) {
+      response = "Nassim has worked on diverse projects: from real-time search cloud platforms and data migration tools to mobile apps using Apache Cordova. He loves solving complex architectural challenges!";
+    } else if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
+      response = "Hello! I'm Nassim's Digital Twin. I can tell you about his technical expertise, his professional journey, or how to get in touch with him. What would you like to know?";
+    } else if (input.includes("location") || input.includes("where")) {
+      response = "Nassim is based in the beautiful city of Erfurt, Germany. He's open to high-impact projects locally and remotely.";
     }
 
     return { messages: [new AIMessage(response)] };

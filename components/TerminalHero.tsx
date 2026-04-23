@@ -69,7 +69,7 @@ export default function TerminalHero() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 2 + idx * 0.4 }}
-                className={line.includes("[SUCCESS]") ? "text-terminal-green/80" : "text-white/60"}
+                className={idx === 1 ? "text-terminal-green/80" : "text-white/60"}
               >
                 {line}
               </motion.div>
