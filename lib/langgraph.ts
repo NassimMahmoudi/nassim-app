@@ -40,39 +40,36 @@ const callModel = async (state: typeof StateAnnotation.State) => {
   const lastMessage = state.messages[state.messages.length - 1];
   
   // Real implementation would use ChatOpenAI here.
-  // For now, if no API key is found, we'll provide a high-quality simulated response.
-  if (!process.env.OPENAI_API_KEY) {
-    const input = lastMessage.content.toString().toLowerCase();
-    let response = "I'm sorry, I'm still learning about that part of Nassim's life. Try asking about 'skills', 'experience', 'projects', or 'contact'!";
-    
-    if (input.includes("skill") || input.includes("tech")) {
-      response = "Nassim is highly proficient in modern web development. His core stack includes React 19, Next.js, and TypeScript. He's also skilled in backend technologies like Node.js, Spring Boot, and Java, with expertise in both SQL (PostgreSQL) and NoSQL (MongoDB) databases.";
-    } else if (input.includes("contact") || input.includes("reach") || input.includes("email") || input.includes("phone")) {
-      response = "You can reach Nassim at nassimmahmoudi38@gmail.com. He's also available on LinkedIn for professional networking, or you can check his phone: +49 179 2241555.";
-    } else if (input.includes("experience") || input.includes("work") || input.includes("job")) {
-      response = "Currently, Nassim is a seniority-level Full Stack Developer at Quasiris Search Cloud in Erfurt, leading frontend efforts. Previously, he spent 2 years at TELEMATIK building enterprise-grade Angular and Spring Boot applications.";
-    } else if (input.includes("project")) {
-      response = "Nassim has worked on diverse projects: from real-time search cloud platforms and data migration tools to mobile apps using Apache Cordova. He loves solving complex architectural challenges!";
-    } else if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
-      response = "Hello! I'm Nassim's Digital Twin. I can tell you about his technical expertise, his professional journey, or how to get in touch with him. What would you like to know?";
-    } else if (input.includes("location") || input.includes("where")) {
-      response = "Nassim is based in the beautiful city of Erfurt, Germany. He's open to high-impact projects locally and remotely.";
-    }
-
-    return { messages: [new AIMessage(response)] };
+  // Use defined mock responses for now (even if API key is present)
+  // Revert this by moving the mock logic inside a "!process.env.OPENAI_API_KEY" block later.
+  const input = lastMessage.content.toString().toLowerCase();
+  let response = "I'm sorry, I'm still learning about that part of Nassim's life. Try asking about 'skills', 'experience', 'projects', or 'contact'!";
+  
+  if (input.includes("skill") || input.includes("tech")) {
+    response = "Nassim is highly proficient in modern web development. His core stack includes React 19, Next.js, and TypeScript. He's also skilled in backend technologies like Node.js, Spring Boot, and Java, with expertise in both SQL (PostgreSQL) and NoSQL (MongoDB) databases.";
+  } else if (input.includes("contact") || input.includes("reach") || input.includes("email") || input.includes("phone")) {
+    response = "You can reach Nassim at nassimmahmoudi38@gmail.com. He's also available on LinkedIn for professional networking, or you can check his phone: +49 179 2241555.";
+  } else if (input.includes("experience") || input.includes("work") || input.includes("job")) {
+    response = "Currently, Nassim is a seniority-level Full Stack Developer at Quasiris Search Cloud in Erfurt, leading frontend efforts. Previously, he spent 2 years at TELEMATIK building enterprise-grade Angular and Spring Boot applications.";
+  } else if (input.includes("project")) {
+    response = "Nassim has worked on diverse projects: from real-time search cloud platforms and data migration tools to mobile apps using Apache Cordova. He loves solving complex architectural challenges!";
+  } else if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
+    response = "Hello! I'm Nassim's Digital Twin. I can tell you about his technical expertise, his professional journey, or how to get in touch with him. What would you like to know?";
+  } else if (input.includes("location") || input.includes("where")) {
+    response = "Nassim is based in the beautiful city of Erfurt, Germany. He's open to high-impact projects locally and remotely.";
   }
 
-  // If we had OpenAI integrated:
+  return { messages: [new AIMessage(response)] };
+
+  // If we had OpenAI integrated (Future Use):
   /*
-  const chat = new ChatOpenAI({ modelName: "gpt-4-turbo" });
+  const chat = new ChatOpenAI({ modelName: "gpt-4-turbo", openAIApiKey: process.env.OPENAI_API_KEY });
   const result = await chat.invoke([
     new SystemMessage(cvContext),
     ...state.messages
   ]);
   return { messages: [result] };
   */
-  
-  return { messages: [new AIMessage("AI Logic Triggered (Key Found)")] };
 };
 
 const workflow = new StateGraph(StateAnnotation)

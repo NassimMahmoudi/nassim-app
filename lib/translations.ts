@@ -76,11 +76,11 @@ export const translations = {
       }
     ],
     certData: [
-      "Driver's License: Class B",
       "WeAreDevelopers World Congress 2025",
       "98-382: MTA JAVASCRIPT",
       "98-381: MTA PYTHON",
-      "98-388: MTA JAVA"
+      "98-388: MTA JAVA",
+      "German Driver's License: Class B",
     ],
     languages: {
       arabic: "Arabic",
@@ -92,7 +92,7 @@ export const translations = {
       advanced: "Advanced",
     },
     footer: {
-      rights: "© 2026 // NASSIM_SYSTEMS // NASSIM MAHMOUDI",
+      rights: "© 2026 // CLAYSYSTEMS // NASSIM MAHMOUDI",
     },
   },
   de: {
@@ -170,11 +170,11 @@ export const translations = {
       }
     ],
     certData: [
-      "Führerschein: Klasse B",
       "WeAreDevelopers Weltkongress 2025",
       "98-382: MTA JAVASCRIPT",
       "98-381: MTA PYTHON",
-      "98-388: MTA JAVA"
+      "98-388: MTA JAVA",
+      "Deutscher Führerschein : Klasse B"
     ],
     languages: {
       arabic: "Arabisch",
@@ -186,7 +186,7 @@ export const translations = {
       advanced: "Erweitert",
     },
     footer: {
-      rights: "© 2026 // NASSIM_SYSTEMS // NASSIM MAHMOUDI",
+      rights: "© 2026 // CLAYSYSTEMS // NASSIM MAHMOUDI",
     },
   },
   fr: {
@@ -264,11 +264,11 @@ export const translations = {
       }
     ],
     certData: [
-      "Permis de conduire : Classe B",
       "Congrès mondial WeAreDevelopers 2025",
       "98-382: MTA JAVASCRIPT",
       "98-381: MTA PYTHON",
-      "98-388: MTA JAVA"
+      "98-388: MTA JAVA",
+      "Permis de conduire allemand : Classe B"
     ],
     languages: {
       arabic: "Arabe",
@@ -280,7 +280,7 @@ export const translations = {
       advanced: "Avancé",
     },
     footer: {
-      rights: "© 2026 // NASSIM_SYSTEMS // NASSIM MAHMOUDI",
+      rights: "© 2026 // CLAYSYSTEMS // NASSIM MAHMOUDI",
     },
   },
   ar: {
@@ -358,11 +358,11 @@ export const translations = {
       }
     ],
     certData: [
-      "رخصة القيادة: الفئة B",
       "المؤتمر العالمي للمطورين 2025",
       "98-382: MTA JAVASCRIPT",
       "98-381: MTA PYTHON",
-      "98-388: MTA JAVA"
+      "98-388: MTA JAVA",
+      "رخصة القيادة ألمانية : الفئة B",
     ],
     languages: {
       arabic: "العربية",
@@ -374,7 +374,7 @@ export const translations = {
       advanced: "متقدم",
     },
     footer: {
-      rights: "© 2026 // NASSIM_SYSTEMS // ناصر محمودي",
+      rights: "© 2026 // CLAYSYSTEMS // نسيم محمودي",
     },
   },
 };
