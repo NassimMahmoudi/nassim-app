@@ -5,7 +5,7 @@ export const translations = {
     hero: {
       loading: "> Loading Nassim_Persona.sh...",
       success: "> [SUCCESS] High-Level Engineer found.",
-      location: "> Location: Erfurt, Germany",
+      location: "> Location: Berlin, Germany",
       focus: "> Main_Focus: JS, React, Software Architecture.",
       status: "> Status: Available for High-Impact Projects.",
       whoami: "whoami --professional",
@@ -27,7 +27,7 @@ export const translations = {
         company: "Independent",
         location: "Remote",
         period: "April 2026 - Present",
-        description: "Lectful Corporation (USA): Developed and automated complex AI workflows utilizing n8n for defined organizational tasks. Adam Fahrschule Erfurt: Designed and implemented a responsive, multi-language static web application using React, managing the end-to-end deployment process.",
+        description: "Lectful Corporation (USA): Developed and automated complex AI workflows utilizing n8n for defined organizational tasks. Adam Fahrschule Berlin: Designed and implemented a responsive, multi-language static web application using React, managing the end-to-end deployment process.",
         tech: ["React", "Node.js", "n8n", "AI Workflows", "Web Development"]
       },
       {
@@ -114,7 +114,7 @@ export const translations = {
     hero: {
       loading: "> Upload von Nassim_Persona.sh...",
       success: "> [ERFOLG] Senior-Ingenieur gefunden.",
-      location: "> Standort: Erfurt, Deutschland",
+      location: "> Standort: Berlin, Deutschland",
       focus: "> Fokus: JS, React, Software-Architektur.",
       status: "> Status: Verfügbar für anspruchsvolle Projekte.",
       whoami: "werbinich --beruflich",
@@ -134,7 +134,7 @@ export const translations = {
       {
         title: "Full Stack Softwareentwickler",
         company: "Quasiris Search Cloud",
-        location: "Erfurt, Deutschland",
+        location: "Berlin, Deutschland",
         period: "2023 - März 2026",
         description: "Leitung der Frontend-Entwicklung mit React und Vue.js für Suchlösungen. Implementierung von REST-API-Integrationen.",
         tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
@@ -142,7 +142,7 @@ export const translations = {
       {
         title: "Full-Stack Web Developer (Internship)",
         company: "Funcoach Space",
-        location: "Erfurt, Deutschland",
+        location: "Berlin, Deutschland",
         period: "August 2022 - December 2022",
         description: "Entwicklung von Unternehmensanwendungen mit Angular und Spring Boot. Verwaltung umfangreicher Datenmigrationen.",
         tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
@@ -150,7 +150,7 @@ export const translations = {
       {
         title: "Software Developer (Internship)",
         company: "TELEMATIK",
-        location: "Erfurt, Deutschland",
+        location: "Berlin, Deutschland",
         period: "January 2020 - September 2020",
         description: "Unterstützung beim Aufbau mobiler Apps. Erfahrung in Node.js und PostgreSQL gesammelt.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
@@ -208,7 +208,7 @@ export const translations = {
     hero: {
       loading: "> Chargement de Nassim_Persona.sh...",
       success: "> [SUCCÈS] Ingénieur de haut niveau trouvé.",
-      location: "> Lieu: Erfurt, Allemagne",
+      location: "> Lieu: Berlin, Allemagne",
       focus: "> Focus: JS, React, Architecture Logicielle.",
       status: "> Statut: Disponible pour des projets d'impact.",
       whoami: "qui-suis-je --professionnel",
@@ -228,7 +228,7 @@ export const translations = {
       {
         title: "Développeur Logiciel Full Stack",
         company: "Quasiris Search Cloud",
-        location: "Erfurt, Allemagne",
+        location: "Berlin, Allemagne",
         period: "2023 - Mars 2026",
         description: "Direction du développement frontend avec React et Vue.js pour des solutions de recherche. Intégrations d'API REST.",
         tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
@@ -236,7 +236,7 @@ export const translations = {
       {
         title: "Développeur Web Full-Stack (Stage)",
         company: "Funcoach Space",
-        location: "Erfurt, Allemagne",
+        location: "Berlin, Allemagne",
         period: "August 2022 - December 2022",
         description: "Développement d'applications d'entreprise en Angular et Spring Boot. Gestion de migrations de données.",
         tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
@@ -244,7 +244,7 @@ export const translations = {
       {
         title: "Développeur Logiciel (Stage)",
         company: "TELEMATIK",
-        location: "Erfurt, Allemagne",
+        location: "Berlin, Allemagne",
         period: "January 2020 - September 2020",
         description: "Aide à la création d'applications mobiles. Expérience acquise en Node.js et PostgreSQL.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
@@ -302,7 +302,7 @@ export const translations = {
     hero: {
       loading: "> جاري تحميل Nassim_Persona.sh...",
       success: "> [نجاح] تم العثور على مهندس متميز.",
-      location: "> الموقع: إرفورت، ألمانيا",
+      location: "> الموقع: برلين، ألمانيا",
       focus: "> التركيز: JS ، React ، هندسة البرمجيات.",
       status: "> الحالة: متاح للمشاريع الكبيرة.",
       whoami: "من_أنا --مهنياً",
@@ -322,7 +322,7 @@ export const translations = {
       {
         title: "مطور برمجيات شامل",
         company: "Quasiris Search Cloud",
-        location: "إرفورت، ألمانيا",
+        location: "برلين، ألمانيا",
         period: "2023 - مارس 2026",
         description: "قيادة تطوير الواجهات الأمامية باستخدام React و Vue.js لحلول البحث. تنفيذ تكاملات API REST.",
         tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
@@ -330,7 +330,7 @@ export const translations = {
       {
         title: "مطور ويب شامل (تدريب)",
         company: "Funcoach Space",
-        location: "إرفورت، ألمانيا",
+        location: "برلين، ألمانيا",
         period: "August 2022 - December 2022",
         description: "تطوير تطبيقات المؤسسات باستخدام Angular و Spring Boot. إدارة عمليات ترحيل البيانات واسعة النطاق.",
         tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
@@ -338,7 +338,7 @@ export const translations = {
       {
         title: "مطور برمجيات (تدريب)",
         company: "TELEMATIK",
-        location: "إرفورت، ألمانيا",
+        location: "برلين، ألمانيا",
         period: "January 2020 - September 2020",
         description: "المساعدة في بناء تطبيقات الهاتف المحمول. اكتساب الخبرة في Node.js و PostgreSQL.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]

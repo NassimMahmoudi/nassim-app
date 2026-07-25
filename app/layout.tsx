@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 import { LanguageProvider } from "@/lib/LanguageContext";
+import ChatbotBubble from "@/components/ChatbotBubble";
 
 export default function RootLayout({
   children,
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className="crt-overlay opacity-20" />
           <main className="relative min-h-screen flex flex-col items-center">
             {children}
+            <ChatbotBubble />
           </main>
         </LanguageProvider>
       </body>
