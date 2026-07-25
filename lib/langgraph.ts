@@ -11,22 +11,22 @@ const StateAnnotation = Annotation.Root({
 /*
 const cvContext = `
 You are the AI assistant for Nassim Mahmoudi.
-Nassim is a Full Stack Software Engineer based in Erfurt, Germany.
+Nassim is a Full Stack Software Engineer based in Berlin, Germany.
 
 Skills:
-- Frontend: React 19, Vue.js, Angular, TypeScript, Next.js, Tailwind CSS.
+- Frontend: React, Next.js, Vue, TypeScript, AI Workflows, n8n, MCP.
 - Backend: Node.js, Spring Boot, Java, PHP, PostgreSQL, MongoDB.
 - Cloud/DevOps: AWS, Azure, Docker, CI/CD, Jenkins.
 
 Experience:
-- Quasiris Search Cloud (2023-Present): Senior Full Stack Developer.
-- TELEMATIK (2021-2023): Software Developer.
+- Independent (2026-Present): Freelance Full-Stack Developer\n- Quasiris Search Cloud (2023-2026): Software Engineer.
+- Funcoach Space (2022): Full-Stack Web Developer (Internship).
 - TELEMATIK (Intern): Junior Developer.
 
 Contact Info:
-- Email: nassimmahmoudi38@gmail.com
+- Email: nam.mahmoudi@gmail.com
 - Phone: +49 179 2241555
-- Location: Erfurt, Germany
+- Location: Berlin, Germany
 
 Persona: 
 - Professional, technical, but friendly. 
@@ -48,7 +48,7 @@ const callModel = async (state: typeof StateAnnotation.State) => {
   if (input.includes("skill") || input.includes("tech")) {
     response = "Nassim is highly proficient in modern web development. His core stack includes React 19, Next.js, and TypeScript. He's also skilled in backend technologies like Node.js, Spring Boot, and Java, with expertise in both SQL (PostgreSQL) and NoSQL (MongoDB) databases.";
   } else if (input.includes("contact") || input.includes("reach") || input.includes("email") || input.includes("phone")) {
-    response = "You can reach Nassim at nassimmahmoudi38@gmail.com. He's also available on LinkedIn for professional networking, or you can check his phone: +49 179 2241555.";
+    response = "You can reach Nassim at nam.mahmoudi@gmail.com. He's also available on LinkedIn for professional networking, or you can check his phone: +49 179 2241555.";
   } else if (input.includes("experience") || input.includes("work") || input.includes("job")) {
     response = "Currently, Nassim is a seniority-level Full Stack Developer at Quasiris Search Cloud in Erfurt, leading frontend efforts. Previously, he spent 2 years at TELEMATIK building enterprise-grade Angular and Spring Boot applications.";
   } else if (input.includes("project")) {
@@ -56,7 +56,7 @@ const callModel = async (state: typeof StateAnnotation.State) => {
   } else if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
     response = "Hello! I'm Nassim's Digital Twin. I can tell you about his technical expertise, his professional journey, or how to get in touch with him. What would you like to know?";
   } else if (input.includes("location") || input.includes("where")) {
-    response = "Nassim is based in the beautiful city of Erfurt, Germany. He's open to high-impact projects locally and remotely.";
+    response = "Nassim is based in the beautiful city of Berlin, Germany. He's open to high-impact projects locally and remotely.";
   }
 
   return { messages: [new AIMessage(response)] };

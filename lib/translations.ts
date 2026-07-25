@@ -27,7 +27,7 @@ export const translations = {
         company: "Independent",
         location: "Remote",
         period: "April 2026 - Present",
-        description: "Lectful Corporation (USA): Developed and automated complex AI workflows utilizing n8n for defined organizational tasks. Adam Fahrschule Berlin: Designed and implemented a responsive, multi-language static web application using React, managing the end-to-end deployment process.",
+        description: "Lectful Corporation (USA): Developed and automated complex AI workflows utilizing n8n for defined organizational tasks. Adam Fahrschule Erfurt: Designed and implemented a responsive, multi-language static web application using React, managing the end-to-end deployment process.",
         tech: ["React", "Node.js", "n8n", "AI Workflows", "Web Development"]
       },
       {
