@@ -23,64 +23,79 @@ export const translations = {
     },
     workData: [
       {
-        title: "Full Stack Software Developer",
-        company: "Quasiris Search Cloud",
-        location: "Erfurt, Germany",
-        period: "2023 - Present",
-        description: "Leading frontend development using React and Vue.js for search solutions. Implementing REST API integrations.",
-        tech: ["React", "Vue.js", "REST APIs", "TypeScript"]
+        title: "Freelance Full-Stack Developer",
+        company: "Independent",
+        location: "Remote",
+        period: "April 2026 - Present",
+        description: "Lectful Corporation (USA): Developed and automated complex AI workflows utilizing n8n for defined organizational tasks. Adam Fahrschule Erfurt: Designed and implemented a responsive, multi-language static web application using React, managing the end-to-end deployment process.",
+        tech: ["React", "Node.js", "n8n", "AI Workflows", "Web Development"]
       },
       {
-        title: "Software Developer",
+        title: "Software Engineer",
+        company: "Quasiris Search Cloud GmbH",
+        location: "Germany",
+        period: "August 2023 - March 2026",
+        description: "Developed responsive frontend components based on Vue.js/JS. Collaborated on AI-based agent solutions (MCP). Handled payment service integration (Stripe).",
+        tech: ["Vue.js", "SEO", "AI Agents", "MCP", "Stripe", "SaaS"]
+      },
+      {
+        title: "Full-Stack Web Developer (Internship)",
         company: "TELEMATIK",
-        location: "Erfurt, Germany",
-        period: "2021 - 2023",
-        description: "Developed enterprise applications using Angular and Spring Boot. Managed large-scale data migrations.",
-        tech: ["Angular", "Spring Boot", "Java", "MongoDB"]
+        location: "Tunisia",
+        period: "August 2022 - December 2022",
+        description: "Developed a comprehensive stadium management application from the ground up, utilizing Angular for the frontend and Spring Boot (Java) for the backend. Designed scalable data schemas.",
+        tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB"]
       },
       {
-        title: "Junior Software Developer (Intern)",
+        title: "Software Developer (End of Studies Internship)",
         company: "TELEMATIK",
-        location: "Erfurt, Germany",
-        period: "2020 - 2021",
-        description: "Assisted in building mobile apps. Gained experience in Node.js and PostgreSQL.",
-        tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
+        location: "Tunisia",
+        period: "January 2020 - September 2020",
+        description: "Developed a web and mobile application for managing vehicle fleets, leveraging Vue.js, Node.js, and Apache Cordova. Implemented secure Node.js backend.",
+        tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL", "Cross-Platform"]
       },
       {
-        title: "IT Technician",
+        title: "IT Technician (Internship)",
         company: "BIAT Bank",
         location: "Tunisia",
-        period: "Jan 2018 – Mar 2018",
-        description: "Support and maintenance of IT systems, ensuring network stability and hardware performance.",
+        period: "January 2018 - March 2018",
+        description: "Supported and maintained critical hardware and software systems within a secure banking environment, ensuring minimal downtime.",
         tech: ["System Support", "Network Maintenance", "Hardware Troubleshooting"]
       }
     ],
     eduData: [
       {
-        degree: "Master of Science in Computer Science",
-        institution: "Schmalkalden University of Applied Sciences",
+        degree: "Master's Degree, Computer Science (Freemover)",
+        institution: "Philipps-Universität Marburg",
         location: "Germany",
-        period: "2022 – 2023"
+        period: "2023 - 2024"
+      },
+      {
+        degree: "Master's Degree, Computer Science(Exchange)",
+        institution: "HOCHSCHULE SCHMALKALDEN",
+        location: "Germany",
+        period: "2023 - 2024"
       },
       {
         degree: "Diploma in Software Engineering",
         institution: "TEK-UP University",
         location: "Tunisia",
-        period: "2020 – 2023"
+        period: "2020 - 2026"
       },
       {
-        degree: "Bachelor of Science in Computer Science",
-        institution: "Higher Institute of Applied Sciences",
+        degree: "Bachelor's Degree in Computer Technology",
+        institution: "Zaghwen Higher Institute of Technological Studies",
         location: "Tunisia",
-        period: "2017 – 2020"
+        period: "2017 - 2020"
       }
     ],
     certData: [
       "WeAreDevelopers World Congress 2025",
+      "SCRUM FOUNDATION PROFESSIONAL",
       "98-382: MTA JAVASCRIPT",
       "98-381: MTA PYTHON",
       "98-388: MTA JAVA",
-      "German Driver's License: Class B",
+      "German Driver's License B"
     ],
     languages: {
       arabic: "Arabic",
@@ -120,28 +135,28 @@ export const translations = {
         title: "Full Stack Softwareentwickler",
         company: "Quasiris Search Cloud",
         location: "Erfurt, Deutschland",
-        period: "2023 - Heute",
+        period: "2023 - März 2026",
         description: "Leitung der Frontend-Entwicklung mit React und Vue.js für Suchlösungen. Implementierung von REST-API-Integrationen.",
-        tech: ["React", "Vue.js", "REST APIs", "TypeScript"]
+        tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
       },
       {
-        title: "Softwareentwickler",
-        company: "TELEMATIK",
+        title: "Full-Stack Web Developer (Internship)",
+        company: "Funcoach Space",
         location: "Erfurt, Deutschland",
-        period: "2021 - 2023",
+        period: "August 2022 - December 2022",
         description: "Entwicklung von Unternehmensanwendungen mit Angular und Spring Boot. Verwaltung umfangreicher Datenmigrationen.",
-        tech: ["Angular", "Spring Boot", "Java", "MongoDB"]
+        tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
       },
       {
-        title: "Junior Softwareentwickler (Praktikant)",
+        title: "Software Developer (Internship)",
         company: "TELEMATIK",
         location: "Erfurt, Deutschland",
-        period: "2020 - 2021",
+        period: "January 2020 - September 2020",
         description: "Unterstützung beim Aufbau mobiler Apps. Erfahrung in Node.js und PostgreSQL gesammelt.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
       },
       {
-        title: "IT-Techniker",
+        title: "IT Technician (Internship)",
         company: "BIAT Bank",
         location: "Tunesien",
         period: "Jan 2018 – Mär 2018",
@@ -160,7 +175,7 @@ export const translations = {
         degree: "Diplom in Software Engineering",
         institution: "TEK-UP Universität",
         location: "Tunesien",
-        period: "2020 – 2023"
+        period: "2020 – 2026"
       },
       {
         degree: "Bachelor in Informatik und Technologie",
@@ -214,28 +229,28 @@ export const translations = {
         title: "Développeur Logiciel Full Stack",
         company: "Quasiris Search Cloud",
         location: "Erfurt, Allemagne",
-        period: "2023 - Présent",
+        period: "2023 - Mars 2026",
         description: "Direction du développement frontend avec React et Vue.js pour des solutions de recherche. Intégrations d'API REST.",
-        tech: ["React", "Vue.js", "REST APIs", "TypeScript"]
+        tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
       },
       {
-        title: "Développeur Logiciel",
-        company: "TELEMATIK",
+        title: "Développeur Web Full-Stack (Stage)",
+        company: "Funcoach Space",
         location: "Erfurt, Allemagne",
-        period: "2021 - 2023",
+        period: "August 2022 - December 2022",
         description: "Développement d'applications d'entreprise en Angular et Spring Boot. Gestion de migrations de données.",
-        tech: ["Angular", "Spring Boot", "Java", "MongoDB"]
+        tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
       },
       {
-        title: "Développeur Logiciel Junior (Stagiaire)",
+        title: "Développeur Logiciel (Stage)",
         company: "TELEMATIK",
         location: "Erfurt, Allemagne",
-        period: "2020 - 2021",
+        period: "January 2020 - September 2020",
         description: "Aide à la création d'applications mobiles. Expérience acquise en Node.js et PostgreSQL.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
       },
       {
-        title: "Technicien Informatique",
+        title: "Technicien Informatique (Stage)",
         company: "BIAT Bank",
         location: "Tunisie",
         period: "Jan 2018 – Mar 2018",
@@ -254,7 +269,7 @@ export const translations = {
         degree: "Diplôme en Génie Logiciel",
         institution: "Université TEK-UP",
         location: "Tunisie",
-        period: "2020 – 2023"
+        period: "2020 – 2026"
       },
       {
         degree: "Licence en Informatique et Technologie",
@@ -308,28 +323,28 @@ export const translations = {
         title: "مطور برمجيات شامل",
         company: "Quasiris Search Cloud",
         location: "إرفورت، ألمانيا",
-        period: "2023 - حتى الآن",
+        period: "2023 - مارس 2026",
         description: "قيادة تطوير الواجهات الأمامية باستخدام React و Vue.js لحلول البحث. تنفيذ تكاملات API REST.",
-        tech: ["React", "Vue.js", "REST APIs", "TypeScript"]
+        tech: ["React", "Vue.js", "SEO", "REST APIs", "TypeScript"]
       },
       {
-        title: "مطور برمجيات",
-        company: "TELEMATIK",
+        title: "مطور ويب شامل (تدريب)",
+        company: "Funcoach Space",
         location: "إرفورت، ألمانيا",
-        period: "2021 - 2023",
+        period: "August 2022 - December 2022",
         description: "تطوير تطبيقات المؤسسات باستخدام Angular و Spring Boot. إدارة عمليات ترحيل البيانات واسعة النطاق.",
-        tech: ["Angular", "Spring Boot", "Java", "MongoDB"]
+        tech: ["Angular", "Spring Boot", "Java", "SQL", "MongoDB", "NoSQL"]
       },
       {
-        title: "مطور برمجيات مبتدئ (متدرب)",
+        title: "مطور برمجيات (تدريب)",
         company: "TELEMATIK",
         location: "إرفورت، ألمانيا",
-        period: "2020 - 2021",
+        period: "January 2020 - September 2020",
         description: "المساعدة في بناء تطبيقات الهاتف المحمول. اكتساب الخبرة في Node.js و PostgreSQL.",
         tech: ["Vue.js", "Node.js", "Apache Cordova", "PostgreSQL"]
       },
       {
-        title: "فني تكنولوجيا معلومات",
+        title: "فني تكنولوجيا معلومات (تدريب)",
         company: "BIAT Bank",
         location: "تونس",
         period: "يناير 2018 – مارس 2018",
@@ -348,7 +363,7 @@ export const translations = {
         degree: "ديبلوم في هندسة البرمجيات",
         institution: "جامعة TEK-UP",
         location: "تونس",
-        period: "2020 – 2023"
+        period: "2020 – 2026"
       },
       {
         degree: "إجازة في علوم وتكنولوجيا الكمبيوتر",

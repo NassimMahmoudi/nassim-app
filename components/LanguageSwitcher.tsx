@@ -28,11 +28,11 @@ const LinkedinIcon = ({ size = 18 }: { size?: number }) => (
   </svg>
 );
 
-const languages: { code: Language; label: string; flag: string }[] = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  { code: 'ar', label: 'العربية', flag: '🇹🇳' },
+const languages: { code: Language; label: string; flagClass: string }[] = [
+  { code: 'en', label: 'English', flagClass: 'fi fi-gb' },
+  { code: 'de', label: 'Deutsch', flagClass: 'fi fi-de' },
+  { code: 'fr', label: 'Français', flagClass: 'fi fi-fr' },
+  { code: 'ar', label: 'العربية', flagClass: 'fi fi-tn' },
 ];
 
 export default function LanguageSwitcher() {
@@ -51,7 +51,7 @@ export default function LanguageSwitcher() {
           <GithubIcon size={18} />
         </a>
         <a 
-          href="https://www.linkedin.com/in/nam-mahmoudi/" 
+          href="https://www.linkedin.com/in/nassim-mahmoudi/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="terminal-glass p-2 rounded-full glow-border text-white/40 hover:text-terminal-blue hover:scale-110 transition-all flex items-center justify-center cursor-pointer"
@@ -74,7 +74,7 @@ export default function LanguageSwitcher() {
               }`}
             >
               <span className="hidden sm:inline">{lang.label}</span>
-              <span>{lang.flag}</span>
+              <span className={lang.flagClass}></span>
             </button>
           ))}
         </div>

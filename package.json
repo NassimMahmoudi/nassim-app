@@ -9,9 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@langchain/langgraph": "^1.2.9",
-    "@langchain/openai": "^1.4.4",
     "clsx": "^2.1.1",
+    "flag-icons": "^7.5.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.8.0",
     "next": "16.2.4",

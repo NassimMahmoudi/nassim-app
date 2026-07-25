@@ -43,8 +43,8 @@ export default function Home() {
           <p>{t.footer.rights}</p>
           <div className="flex gap-6">
             <a href="https://github.com/NassimMahmoudi" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-blue transition-colors">GITHUB</a>
-            <a href="https://www.linkedin.com/in/nam-mahmoudi/" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-blue transition-colors">LINKEDIN</a>
-            <a href="mailto:nassimmahmoudi38@gmail.com" className="hover:text-terminal-blue transition-colors">MAIL</a>
+            <a href="https://www.linkedin.com/in/nassim-mahmoudi/" target="_blank" rel="noopener noreferrer" className="hover:text-terminal-blue transition-colors">LINKEDIN</a>
+            <a href="mailto:nam.mahmoudi@gmail.com" className="hover:text-terminal-blue transition-colors">MAIL</a>
           </div>
         </footer>
       </div>
